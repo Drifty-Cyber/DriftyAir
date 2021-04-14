@@ -1,0 +1,541 @@
+/* 
+    Green Color: #18d26e
+*/
+/* Essential: 5 6 */
+/* ----------------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    /* font-weight: bold; */
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    /* background-image: url(img/leaves-pattern.png);  */
+}
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+/* ----------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ----------------------------------------------- */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;
+}
+
+/* ----- HEADINGS ----- */
+h1, 
+h2, 
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 97%;
+    margin-bottom: 15px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #18d26e;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/* -------------PARAGRAPHS-------------------  */
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+
+/* -----------ICONS--------------- */
+.icon-big {
+    display: block;
+    font-size: 350%;
+    color: #18d26e;
+    margin-bottom: 10px;
+}
+
+
+/* ----- BUTTONS ----- */
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+    -ms-border-radius: 200px;
+    -o-border-radius: 200px;
+    -moz-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    -ms-transition: background-color 0.2s, border 0.2s, color 0.2s;
+    -o-transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    background-color: #18d26e;
+    border: 1px solid #18d26e;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #18d26e;
+    color: #18d26e;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #359455;
+    outline: none;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #359455;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #359455;
+    color: #fff;
+}
+
+
+/* ----------------------------------------------- */
+/* HEADER */
+/* ----------------------------------------------- */
+
+header {
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/background.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/background.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.impro-border {
+    /* height: 100px; */
+    width: auto;
+    float: left;
+    margin-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    border-left: 4px solid #18d26e;
+    font-size: 170%;
+    line-height: 1;
+    font-weight: 100;
+    letter-spacing: 3px;
+    padding-left: 10px;
+}
+
+/* MAIN NAV*/
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 27px;
+}
+
+.main-nav li:first-child {
+    margin-left: 27px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 80%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+    -moz-transition: border-bottom 0.2s;
+    -ms-transition: border-bottom 0.2s;
+    -o-transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #18d26e;
+}
+
+/* -----------------BEFORE THE QUICK BOOKING SECTION------------------- */
+.first-hr {
+    margin-top: 4%;
+}
+
+
+
+/*-------------------- Form Styling------------------------------------ */
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;             
+    margin: 8px 0;
+    /* box-sizing: border-box; */
+    border: none;
+    border-bottom: 2px solid #18d26e;
+}
+
+input[type=text]:focus {
+    outline: none;
+    border-bottom: 2px solid #359455;
+    transition: border-bottom 0.2s, color 0.2s;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
+    -moz-transition: border-bottom 0.2s, color 0.2s;
+    -ms-transition: border-bottom 0.2s, color 0.2s;
+    -o-transition: border-bottom 0.2s, color 0.2s;
+}
+
+.radio-buttons {
+    margin-bottom: 5px;
+}
+
+div .radio-buttons label {
+    margin-right: 5px;
+}
+
+input[type=datetime-local] {
+    border: none;
+    border-bottom: 2px solid #18d26e;
+    margin: 8px 0;    
+    padding: 12px 20px;
+    width: 100%;
+}
+
+input[type=datetime-local]:focus {
+    outline: none;
+    border-bottom: 2px solid #359455;
+    transition: border-bottom 0.2s, color 0.2s;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
+    -moz-transition: border-bottom 0.2s, color 0.2s;
+    -ms-transition: border-bottom 0.2s, color 0.2s;
+    -o-transition: border-bottom 0.2s, color 0.2s;
+}
+
+select {
+    margin: 8px 0;
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 3px;
+    border: none;
+    border-bottom: 2px solid #18d26e;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+select:focus {
+    outline: none;
+    border-bottom: 2px solid #359455;
+    transition: border-bottom 0.2s, color 0.2s;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
+    -moz-transition: border-bottom 0.2s, color 0.2s;
+    -ms-transition: border-bottom 0.2s, color 0.2s;
+    -o-transition: border-bottom 0.2s, color 0.2s;
+}
+
+.form-submit-button {
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+
+
+/* --------------Radio Buttons for Quick Booking----------------------------------- */
+
+
+/* ----------------------------------------------- */
+/* FEATURES */
+/* ----------------------------------------------- */
+
+.book-flight .long-copy {
+    margin-bottom: 30px;
+}
+
+.section-flight-features {
+    padding-top: 0;
+}
+
+.box-link {
+    text-decoration: none;                  /* ----Find a way to add space between the links and features------ */
+    color: #18d26e;    
+}
+
+a.box-link:hover {
+    color: #359455;
+}
+
+
+
+
+
+/* -------------SECTION FEATURES IMAGES--------5-------- */
+
+.feature-image1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/feature-image1.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+.feature-image2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/feature-image2.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+                                                        /* How to make the h4 and p in the images white */
+
+.feature-image3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/feature-image3.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+.feature-image4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/feature-image4.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+.feature-image5 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/feature-image5.jpg);
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+.feature-image-title {
+    color: #fff;
+    font-size: 85%;
+    font-weight: 100;
+    text-align: center;
+}
+
+.feature-title-h4 {
+    margin: 25px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* line-height: 1; */
+    /* letter-spacing: 2px; */
+}
+
+.feature-image-title p {
+    margin-bottom: 5px;
+    font-size: 80%;
+}
+
+.feature-image-title a:link, 
+.feature-image-title a:visited {
+    text-decoration: none;
+    color: #18d26e;
+    transition: color 0.2s;
+    -webkit-transition: color 0.2s;
+    -moz-transition: color 0.2s;
+    -ms-transition: color 0.2s;
+    -o-transition: color 0.2s;
+}
+
+.feature-image-title a:hover, 
+.feature-image-title a:active {
+    color: #359455;
+}
+
+
+
+
+
+/* -------------------------------------FOOTER-------------------------------------------------------------- */
+
+
+hr {
+    width: 4%;
+    border: dotted #60f3a4 6px;
+    border-bottom: none;
+    margin: auto;
+    margin-bottom: 28px;
+}
+
+.second-hr {
+    margin-top: 28px;
+}
+
+.footer-div {
+    text-align: center;
+    font-size: 140%;
+}
+
+.footer-div a:link, 
+.footer-div a:visited {
+    text-decoration: none;
+    color: #555;
+}
+
+.footer-icon {
+    padding-left: 9px;
+}
+
+/* ------ICON HOVER---------- */
+.ion-social-facebook:hover {
+    color: #3b5998;
+}
+
+.ion-social-twitter:hover {
+    color: #00aced;
+}
+
+.ion-social-youtube:hover {
+    color: #bb0000;
+}
+
+.ion-social-instagram:hover {
+    color: #517fa4;
+}
+
+.ion-social-linkedin:hover {
+    color: #007bb6;
+}
+
+.ion-social-dribbble:hover {
+    color: #ec407a;               
+}
+
+.ion-social-googleplus:hover {
+    color: #dd4b39;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-youtube,
+.ion-social-instagram,
+.ion-social-linkedin,
+.ion-social-dribbble,
+.ion-social-googleplus {
+    transition: color 0.4s;
+    -webkit-transition: color 0.4s;
+    -moz-transition: color 0.4s;
+    -ms-transition: color 0.4s;
+    -o-transition: color 0.4s;
+}
+
+.footer-globe {
+    float: left;
+    padding-right: 7px;
+}
+
+.footer-lang {
+    font-size: 70%;
+    margin-top: 3.5px;
+    font-weight: bold;
+}
+
+.trademark-title {
+    color: #18d26e;
+}
+
+.trademark {
+    float: right;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-weight: 900;
+}
+
+.copyright-title {
+    color: #555;
+    font-size: 90%;
+    text-align: center;
+    padding-bottom: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+

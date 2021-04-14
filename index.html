@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Description" content="DriftyAir is an airline which flies to over 30 countries around the world">
+    <meta name="rt" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="resources/favicons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="vendors/css/normalize.css">
+    <link rel="stylesheet" href="vendors/css/grid.css">
+    <link rel="stylesheet" href="vendors/css/ionicons.min.css">
+    <link rel="stylesheet" href="vendors/css/animate.css">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+    <title>DriftyAir &mdash; Travel with Peace</title>
+</head>
+<body>
+    <header>
+        <nav>
+
+            <div class="row clearfix">
+                <div class="impro-border">DriftyAir</div>
+                <ul class="main-nav">
+                    <li><a href="#">Manage Booking</a></li>
+                    <li><a href="#">Check-in</a></li>
+                    <li><a href="#">Flight Status</a></li>
+                    <li><a href="#">Baggage Guide</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <div class="hero-text-box">
+            <h1 class="destination-world">We're flying worldwide.<br>Fly to over 90 destinations.</h1>
+            <a href="#" class="btn btn-full">Book Now</a>
+        </div>
+    </header>
+
+    <hr class="first-hr">
+
+    <section class="book-flight" id="book-flight">
+
+        <div class="row">
+            <h2>Quick Booking &mdash; Book a Flight Now</h2>
+            <P class="long-copy">
+                Hello, we're DriftyAir, World's leading flight merchant. We're proud to announce the availability of round the clock flight services to various locations around the world.
+            </P>
+        </div>
+
+        <div class="row dark-bgc whole-form">
+            <div class="row radio-buttons">
+
+                    <input type="radio" name="radio-btn" id="return-radio">
+                    <label for="return-radio">Return</label>
+                
+                
+                    <input type="radio" name="radio-btn" id="one-way-radio">
+                    <label for="one-way-radio">One Way</label>
+                
+                
+                    <input type="radio" name="radio-btn" id="multi-city-radio">
+                    <label for="multi-city-radio">Multi-City</label>
+                
+            </div>
+
+            <div class="row form-part">
+                <form action="">
+                    <div class="col span-1-of-2">
+
+                        <label for="flying-from">Flying from</label><br>
+                        <input type="text" name="flying-from" placeholder="From..." id="flying-from" required>
+
+                    </div>
+
+                    <div class="col span-1-of-2">
+                        <label for="flying-to">Flying to</label><br>
+                        <input type="text" name="flying-to" placeholder="To..." id="flying-to" required>
+                    </div>
+
+                    <div class="row">
+                    <div class="col span-1-of-2">
+                        <label for="departure-date">Departure Date</label><br>
+                        <input type="datetime-local" name="departure" id="departure-date">
+                    </div>
+
+                    <div class="col span-1-of-2">
+                        <label for="return">Return Date</label><br>
+                        <input type="datetime-local" name="return" id="return">
+                    </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="cabin">Cabin</label><br>
+                            <select name="cabin" id="cabin">
+                                <option value="firstclass">First-class</option>
+                                <option value="businessclass">Business-class</option>
+                                <option value="economyclass" selected>Economy</option>
+                            </select>
+                        </div>
+
+                        <div class="col span-1-of-3">
+                            <label for="guests">Guests</label><br>
+                            <select name="guest" id="guests">
+                                <option value="1adult">1 Adult</option>
+                                <option value="2adult">2 Adults</option>
+                                <option value="1child">1 Child</option>
+                                <option value="2child">2 Children</option>
+                            </select>
+                        </div>
+
+                        <div class="col span-1-of-3">
+                            <label for="promocode">Promo code</label><br>
+                            <input type="text" name="promocode" id="promocode">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <input type="submit" value="Book Flight" class="form-submit-button">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <hr>
+
+    <section class="section-flight-features">
+        <div class="row">
+            <div class="col span-1-of-4 box">
+                <i class="ion-android-plane icon-big"></i>
+                <h3>Fly to and from Lagos</h3>
+                <p>Fly from Lagos and to Lagos from any part of the world anywhere, anytime.</p>
+                <a href="#" class="box-link">Read more</a>
+            </div>
+            <div class="col span-1-of-4 box">
+                <i class="ion-ios-home icon-big"></i>
+                <h3>Lagos Tourism</h3>
+                <p>It's time for your next tour. <br> Visit Lagos, Nigeria's most populated state.</p>
+                <a href="#" class="box-link">Be Inspired</a>
+            </div>
+            <div class="col span-1-of-4 box">
+                <i class="ion-nuclear  icon-big"></i>
+                <h3>Travel Regulations</h3>
+                <p>COVID-19 PCR testing is mandatory before every flight to give you the confidence to travel the world again</p>
+                <a href="#" class="box-link">Read More</a>
+            </div>
+            <div class="col span-1-of-4 box">
+                <i class="ion-share icon-big"></i>
+                <h3>Book for Relations</h3>
+                <p>Book a flight for a relation or friend in the overseas right from the comfort of your home</p>
+                <a href="#" class="box-link">Try Now</a>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="features-images">
+        <div class="row">
+            <div class="col span-1-of-2 feature-image1 feature-image-title">
+                <h4 class="feature-title-h4">Manage your travel</h4>
+                <p>Save your trip for later with almost $400 bonus credit</p>
+                <a href="#">Start Exploring</a>
+            </div>
+            <div class="col span-1-of-2 feature-image2 feature-image-title">
+                <h4 class="feature-title-h4">Flexible Travel for the future</h4>
+                <p>Book now for freedom to change your travel plans if you need to</p>
+                <a href="#">Start Booking</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col span-1-of-2 feature-image3 feature-image-title">
+                <h4 class="feature-title-h4">Flexible Charter Solutions</h4>
+                <p>Across our global network, our on-demand charter services are flexible, convenient and fully customizable</p>
+                <a href="#">Find out more</a>
+            </div>
+            <div class="col span-1-of-2 feature-image4 feature-image-title">
+                <h4 class="feature-title-h4">Pay less for legroom and lounge access</h4>
+                <p>Get up to <a href="#">40% off extra legroom seats</a> in Economy space and save 25% when you pay to use <a href="#">our lounge in Lagos</a></p>
+            </div>
+        </div>
+
+        <div class="row feature-image5 feature-image-title">
+            <h4 class="feature-title-h4">Your wellness, our priority</h4>
+            <p>COVID-19 global insurance cover on all tickets</p>
+            <a href="#">DriftyAir Wellness</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="row footer-div clearfix">
+            <hr>
+            <a href="#"><i class="ion-social-facebook footer-icon"></i></a>
+            <a href="#"><i class="ion-social-twitter footer-icon"></i></a>
+            <a href="#"><i class="ion-social-youtube footer-icon"></i></a>
+            <a href="#"><i class="ion-social-instagram footer-icon"></i></a>
+            <a href="#"><i class="ion-social-linkedin footer-icon"></i></a>
+            <a href="#"><i class="ion-social-dribbble footer-icon"></i></a>
+            <a href="#"><i class="ion-social-googleplus footer-icon"></i></a>
+            <hr class="second-hr">
+        </div>
+
+        <div class="row">
+            <div class="col span-1-of-2">
+                <i class="ion-android-globe footer-globe"></i>
+                <p class="footer-lang">English</p>
+            </div>
+            <div class="col span-1-of-2 trademark-title">
+                <p class="trademark">Lagos to the world</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <p class="copyright-title">Copyright 2021 DriftyAir. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
